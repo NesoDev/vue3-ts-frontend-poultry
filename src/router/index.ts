@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import PromoView from '../views/PromoView.vue'
 import AboutView from '../views/AboutView.vue'
 import MenuView from '../views/MenuView.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',

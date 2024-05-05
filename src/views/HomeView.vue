@@ -28,7 +28,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 </script>
 
 <style scoped>
@@ -50,19 +50,20 @@
 
 #section-1 {
   position: relative;
-  height: 700px;
+  height: 650px;
   background: yellow;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #section-1 .background-img {
   position: absolute;
   width: 100%;
-  height: 700px;
+  height: 650px;
   object-fit: none;
-  filter:brightness(0.5);
+  transform: scale(1.4);
   z-index: 0;
 }
 
@@ -73,7 +74,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: center;
   z-index: 1;
 }
 
@@ -81,6 +81,7 @@
   width: 350px;
   height: auto;
   filter: brightness(1);
+  /*filter: invert(100);*/
 }
 
 #section-1 .container-logo-contact .container-contact {
